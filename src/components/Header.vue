@@ -1,13 +1,19 @@
 
 <template>
-  <header>
-    <img src="../assets/dc-logo.png" alt="" />
-    <nav>
-      <ul>
-        <li v-for="(item, i) in navBarItem" :key="i">{{ item.title }}</li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo-container">
+          <img src="../assets/dc-logo.png" alt="" />
+        </div>
+        <ul>
+          <li v-for="(item, i) in navBarItem" :key="i">
+            <a :href="item.href">{{ item.title }}</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 </template>
 
 <script>
@@ -62,5 +68,29 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
+.container {
+  width: 960px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  .logo-container {
+    width: 60px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  li {
+    padding: 10px;
+  }
+}
 </style>
