@@ -9,25 +9,9 @@
     <div class="bg-navbar2">
       <div class="main-container">
         <ul>
-          <li>
-            <img src="../assets/buy-comics-digital-comics.png" alt="" />
-            <a href="#">Digital comics</a>
-          </li>
-          <li>
-            <img src="../assets/buy-comics-digital-comics.png" alt="" />
-            <a href="#">Digital comics</a>
-          </li>
-          <li>
-            <img src="../assets/buy-comics-digital-comics.png" alt="" />
-            <a href="#">Digital comics</a>
-          </li>
-          <li>
-            <img src="../assets/buy-comics-digital-comics.png" alt="" />
-            <a href="#">Digital comics</a>
-          </li>
-          <li>
-            <img src="../assets/buy-comics-digital-comics.png" alt="" />
-            <a href="#">Digital comics</a>
+          <li v-for="(item, i) in navBarSecondary" :key="i">
+            <img :src="item.img" alt="item.text" />
+            <a href="#">{{ item.text }}</a>
           </li>
         </ul>
       </div>
@@ -38,13 +22,33 @@
 <script>
 export default {
   name: "Main",
-  date() {
+  data() {
     return {
-      navBar2: [
+      navBarSecondary: [
         {
-          title: "Digital comics",
+          text: "Digital comics",
           href: "#",
-          imgSrc: "buy-comics-digital-comics.png",
+          img: require("../assets/buy-comics-digital-comics.png"),
+        },
+        {
+          text: "Dc merchandise",
+          href: "#",
+          img: require("../assets/buy-comics-merchandise.png"),
+        },
+        {
+          text: "subscription",
+          href: "#",
+          img: require("../assets/buy-comics-subscriptions.png"),
+        },
+        {
+          text: "comic shop location",
+          href: "#",
+          img: require("../assets/buy-comics-shop-locator.png"),
+        },
+        {
+          text: "Dc power Visa",
+          href: "#",
+          img: require("../assets/buy-dc-power-visa.svg"),
         },
       ],
     };
@@ -61,15 +65,21 @@ export default {
   ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style-type: none;
-    margin: 0;
+
     padding: 20px;
     img {
-      width: 40px;
+      width: 35px;
       vertical-align: middle;
     }
     a {
-      padding-left: 15px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-left: 10px;
+      white-space: nowrap;
+      font-size: 14px;
     }
   }
 }

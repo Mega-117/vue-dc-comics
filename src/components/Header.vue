@@ -7,8 +7,8 @@
           <img src="../assets/dc-logo.png" alt="" />
         </div>
         <ul>
-          <li v-for="(item, i) in navBarItem" :key="i">
-            <a :href="item.href">{{ item.title }}</a>
+          <li class="item" v-for="(item, i) in navBarItem" :key="i">
+            <a class="link-menu" :href="item.href">{{ item.title }}</a>
           </li>
         </ul>
       </nav>
@@ -89,8 +89,20 @@ ul {
   list-style-type: none;
   align-items: center;
   margin: 0;
-  li {
-    padding: 10px;
+  li.item {
+    padding: 25px 10px;
+    border-bottom: 3px solid;
+    a {
+      padding: 25px 0px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  .link-menu:hover {
+    color: #0282f9;
   }
 }
 </style>

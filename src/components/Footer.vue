@@ -75,6 +75,10 @@ export default {};
 </script>
 
 <style scoped lang="scss">
+footer {
+  overflow: hidden;
+  position: relative;
+}
 .bg-footer {
   background-image: url(../assets/footer-bg.jpg);
   background-size: cover;
@@ -88,6 +92,8 @@ export default {};
 
   h1 {
     color: white;
+    text-transform: uppercase;
+    font-size: 20px;
   }
   .social-icon-container {
     img {
@@ -101,7 +107,7 @@ export default {};
   padding: 30px 0;
   img.logo-big {
     position: absolute;
-    top: 82px;
+    top: -150px;
     right: 140px;
     transform: scale(0.8);
   }
@@ -112,6 +118,7 @@ export default {};
       margin-right: 20px;
       h2 {
         color: white;
+        text-transform: uppercase;
       }
       ul {
         padding-left: 0px;
@@ -125,5 +132,6 @@ export default {};
 }
 .bg-footer-dark {
   background-color: #303030;
+  position: relative;
 }
 </style>
