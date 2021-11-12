@@ -5,7 +5,7 @@
         <img class="logo-big" src="../assets/dc-logo-bg.png" alt="" />
         <div class="footer-list-container">
           <div class="footer-col">
-            <h3>dc comics</h3>
+            <h2>dc comics</h2>
             <ul>
               <li>Charatters</li>
               <li>Comics</li>
@@ -16,14 +16,14 @@
               <li>News</li>
             </ul>
 
-            <h3>Shop</h3>
+            <h2>Shop</h2>
             <ul>
               <li>Shop DC</li>
               <li>Shop DC Collectibles</li>
             </ul>
           </div>
           <div class="footer-col">
-            <h3>dc</h3>
+            <h2>dc</h2>
             <ul>
               <li>Terms Of Use</li>
               <li>Privacy policy (New)</li>
@@ -39,7 +39,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h3>sites</h3>
+            <h2>sites</h2>
             <ul>
               <li>DC</li>
               <li>MAD Magazine</li>
@@ -99,18 +99,19 @@ footer {
     display: flex;
     .footer-col {
       margin-right: 20px;
-      h3 {
+      h2 {
         color: white;
         text-transform: uppercase;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
       ul {
         padding-left: 0px;
         list-style-type: none;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         li {
           color: #959595;
-          font-size: 15px;
+          font-size: 16px;
+          line-height: 20px;
         }
       }
     }
@@ -132,7 +133,7 @@ footer {
         color: #0282f9;
         text-transform: uppercase;
         font-size: 20px;
-        padding-right: 10px;
+        padding-right: 25px;
       }
 
       .social-icon-container {

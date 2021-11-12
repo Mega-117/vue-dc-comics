@@ -3,8 +3,9 @@
     <div class="img-container">
       <img :src="src" alt="" />
     </div>
-    <div class="title"></div>
-    <h6>{{ serie }}</h6>
+    <div class="title">
+      <h6>{{ serie }}</h6>
+    </div>
   </div>
 </template>
 
@@ -20,10 +21,14 @@ export default {
   width: calc((100% / 6) - 10px);
 
   margin-bottom: 5px;
-  h6 {
-    padding: 10px 0;
-    color: white;
-    text-transform: uppercase;
+  .title {
+    width: 140px;
+    h6 {
+      padding: 15px 0 10px;
+      color: white;
+      text-transform: uppercase;
+      line-height: 15px;
+    }
   }
   .img-container {
     width: 140px;

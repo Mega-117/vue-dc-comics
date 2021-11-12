@@ -91,7 +91,7 @@ ul {
   margin: 0;
   .item {
     padding: 25px 10px;
-    border-bottom: 3px solid black;
+    border-bottom: 5px solid transparent;
     a {
       padding: 25px 0px;
       text-transform: uppercase;
@@ -100,8 +100,11 @@ ul {
       font-weight: bold;
       font-size: 12px;
     }
-    &a:hover .item {
-      border-bottom: 3px solid red;
+    a:hover {
+      color: #0282f9;
+    }
+    &:hover {
+      border-bottom: 5px solid #0282f9;
     }
   }
   /* .link-menu:hover {

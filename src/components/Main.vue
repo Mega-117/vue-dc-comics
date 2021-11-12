@@ -179,7 +179,7 @@ export default {
   .btn-load-more {
     background-color: #0282f9;
     color: white;
-    padding: 10px 15px;
+
     border: 0;
     font-size: 16px;
     text-transform: uppercase;
@@ -188,6 +188,12 @@ export default {
   .btn-series {
     position: absolute;
     top: -72px;
+    padding: 10px 15px;
+  }
+
+  .btn-load-more {
+    padding: 7px 35px;
+    font-size: 14px;
   }
 
   .product-bottom-nav {
@@ -214,10 +220,12 @@ export default {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    padding: 20px;
+    gap: 15px;
+    padding: 30px;
 
     img {
       width: 35px;
+      max-height: 45px;
       vertical-align: middle;
     }
 
@@ -225,7 +233,7 @@ export default {
       color: white;
       text-decoration: none;
       text-transform: uppercase;
-      padding-left: 10px;
+      padding-left: 7px;
       white-space: nowrap;
       font-size: 14px;
     }
