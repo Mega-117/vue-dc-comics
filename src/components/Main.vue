@@ -5,7 +5,7 @@
     </div>
     <div class="bg-content">
       <div class="main-container">
-        <h1>--Content goes here--</h1>
+        <button class="btn-series">current series</button>
         <div class="product-container">
           <ProductCard
             v-for="(product, i) in productsList"
@@ -15,6 +15,9 @@
             :serie="product.series"
             :tipo="product.type"
           ></ProductCard>
+        </div>
+        <div class="product-bottom-nav">
+          <button class="btn-load-more">load more</button>
         </div>
       </div>
     </div>
@@ -171,6 +174,27 @@ export default {
 }
 .bg-content {
   background-color: #1c1c1c;
+  padding: 50px 0;
+  .btn-series,
+  .btn-load-more {
+    background-color: #0282f9;
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .btn-series {
+    position: absolute;
+    top: -72px;
+  }
+
+  .product-bottom-nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .bg-navbar2 {
   background-color: #0282f9;
@@ -178,9 +202,11 @@ export default {
 .main-container {
   width: 960px;
   margin: auto;
+  position: relative;
   .product-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
   }
 
   ul {

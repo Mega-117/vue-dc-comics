@@ -17,8 +17,8 @@ export default {
 
 <style lang="scss">
 .card {
-  width: calc(100% / 6);
-  padding: 4px;
+  width: calc((100% / 6) - 10px);
+
   margin-bottom: 5px;
   h6 {
     padding: 10px 0;
@@ -26,8 +26,8 @@ export default {
     text-transform: uppercase;
   }
   .img-container {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     overflow: hidden;
     img {
       width: 100%;

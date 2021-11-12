@@ -53,7 +53,8 @@
     </div>
     <div class="bg-footer-dark">
       <div class="footer-container footer-link">
-        <div class="sign-btn">Sign-up now!</div>
+        <button class="sign-btn">Sign-up now!</button>
+        <button>ciao</button>
         <div class="social-container">
           <h1>Follow us</h1>
           <div class="social-icon-container">
@@ -142,6 +143,7 @@ footer {
   }
   .sign-btn {
     border: 3px solid #0282f9;
+    background-color: transparent;
     color: white;
     display: flex;
     align-items: center;
