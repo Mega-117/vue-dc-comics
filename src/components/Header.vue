@@ -89,9 +89,9 @@ ul {
   list-style-type: none;
   align-items: center;
   margin: 0;
-  li.item {
+  .item {
     padding: 25px 10px;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid black;
     a {
       padding: 25px 0px;
       text-transform: uppercase;
@@ -100,9 +100,12 @@ ul {
       font-weight: bold;
       font-size: 12px;
     }
+    &a:hover .item {
+      border-bottom: 3px solid red;
+    }
   }
-  .link-menu:hover {
+  /* .link-menu:hover {
     color: #0282f9;
-  }
+  } */
 }
 </style>

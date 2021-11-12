@@ -5,7 +5,7 @@
         <img class="logo-big" src="../assets/dc-logo-bg.png" alt="" />
         <div class="footer-list-container">
           <div class="footer-col">
-            <h2>dc comics</h2>
+            <h3>dc comics</h3>
             <ul>
               <li>testo testo</li>
               <li>testo testo</li>
@@ -16,14 +16,14 @@
               <li>testo testo</li>
             </ul>
 
-            <h2>Shop</h2>
+            <h3>Shop</h3>
             <ul>
               <li>testo testo</li>
               <li>testo testo</li>
             </ul>
           </div>
           <div class="footer-col">
-            <h2>dc</h2>
+            <h3>dc</h3>
             <ul>
               <li>testo testo</li>
               <li>testo testo</li>
@@ -39,7 +39,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h2>sites</h2>
+            <h3>sites</h3>
             <ul>
               <li>testo testo</li>
               <li>testo testo</li>
@@ -53,10 +53,9 @@
     </div>
     <div class="bg-footer-dark">
       <div class="footer-container footer-link">
-        <button>Sign-up now!</button>
+        <div class="sign-btn">Sign-up now!</div>
         <div class="social-container">
           <h1>Follow us</h1>
-
           <div class="social-icon-container">
             <img src="../assets/footer-facebook.png" alt="" />
             <img src="../assets/footer-periscope.png" alt="" />
@@ -78,29 +77,13 @@ export default {};
 footer {
   overflow: hidden;
   position: relative;
-}
-.bg-footer {
-  background-image: url(../assets/footer-bg.jpg);
-  background-size: cover;
-}
-.footer-link {
-  display: flex;
-  justify-content: space-between;
-}
-.social-container {
-  display: flex;
 
-  h1 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-  .social-icon-container {
-    img {
-      padding: 0 5px;
-    }
+  .bg-footer {
+    background-image: url(../assets/footer-bg.jpg);
+    background-size: cover;
   }
 }
+
 .footer-container {
   width: 960px;
   margin: auto;
@@ -116,13 +99,14 @@ footer {
     display: flex;
     .footer-col {
       margin-right: 20px;
-      h2 {
+      h3 {
         color: white;
         text-transform: uppercase;
       }
       ul {
         padding-left: 0px;
         list-style-type: none;
+        margin-bottom: 5px;
         li {
           color: #959595;
         }
@@ -133,5 +117,37 @@ footer {
 .bg-footer-dark {
   background-color: #303030;
   position: relative;
+
+  .footer-link {
+    display: flex;
+    justify-content: space-between;
+
+    .social-container {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        color: #0282f9;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-right: 10px;
+      }
+
+      .social-icon-container {
+        img {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  .sign-btn {
+    border: 3px solid #0282f9;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
 }
 </style>
